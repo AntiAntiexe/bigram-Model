@@ -6,7 +6,7 @@ class App:
     def __init__(self):
         self.sent = "GeeksforGeeks is a great learning platform. \
                 It is one of the best for Computer Science students. And it is really fun. And it is really intuitive."
-        self.file1 = open("storyAsone.txt","r+")
+        self.file1 = open("newnew.txt","r+")
         self.sent = self.file1.read()
         self.sent = self.sent.lower()
         print(self.sent)
@@ -59,7 +59,8 @@ class App:
         correct_prob = max(probs)
         print(correct_prob.split())
 
-        x_word = strip_nonalnum_re(''.join(correct_prob).split()[1])
+        #x_word = strip_nonalnum_re(''.join(correct_prob).split()[1])
+        x_word = ''.join(correct_prob).split()[1]
         print(word_Input, x_word)
 
       
